@@ -49,8 +49,15 @@ app.get("/", (req, res) => {
 app.get("/home", ensureAuthenticated, (req, res) => {
     res.render("layout", {
         page: "/home",
-        title: "home",
+        title: "Home",
         username: req?.user.username ?? "Guest",
+    });
+});
+
+app.get("/about", (req, res) => {
+    res.render("layout", {
+        page: "/about",
+        title: "About",
     });
 });
 
