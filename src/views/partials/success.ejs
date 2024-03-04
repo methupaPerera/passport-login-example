@@ -1,0 +1,16 @@
+<div class="mt-2">
+    <% if (successMessages.length > 0) { %>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <% for (const success in successMessages) { %>
+            <%= successMessages[success] %> <% } 
+        %>
+
+        <button
+            type="button"
+            class="btn-close focus-ring focus-ring-success"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+        ></button>
+    </div>
+    <% } %>
+</div>

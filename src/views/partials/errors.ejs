@@ -1,0 +1,16 @@
+<div class="mt-2">
+    <% if (errorMessages.length > 0) { %>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <% for (const error in errorMessages) { %>
+            <%= errorMessages[error] %> <% } 
+        %>
+
+        <button
+            type="button"
+            class="btn-close focus-ring focus-ring-danger"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+        ></button>
+    </div>
+    <% } %>
+</div>

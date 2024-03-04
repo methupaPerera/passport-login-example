@@ -1,0 +1,25 @@
+{
+    "name": "nodejs-login",
+    "version": "1.0.0",
+    "description": "An example login system made with express.js and passport.js.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon run src/index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt": "^5.1.1",
+        "body-parser": "^1.20.2",
+        "connect-flash": "^0.1.1",
+        "cookie-parser": "^1.4.6",
+        "dotenv": "^16.4.5",
+        "ejs": "^3.1.9",
+        "express": "^4.18.3",
+        "express-session": "^1.18.0",
+        "mongoose": "^8.2.0",
+        "passport": "^0.7.0",
+        "passport-local": "^1.0.0"
+    }
+}
